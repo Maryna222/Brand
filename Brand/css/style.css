@@ -1,0 +1,343 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+@import "http://fonts.googleapis.com/css?family=Open+Sans";
+@import "http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+/* line 4, ../sass/_resett.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 5, ../sass/_resett.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font: 1.0625em 'OpenSans Light', Arial, sans-serif;
+  color: #000;
+}
+
+/*17px*/
+/* line 6, ../sass/_resett.scss */
+div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, label, select, input, textarea {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+/* line 12, ../sass/_resett.scss */
+select, input, textarea {
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+/* line 13, ../sass/_resett.scss */
+textarea {
+  vertical-align: top;
+}
+
+/* line 14, ../sass/_resett.scss */
+:focus {
+  outline: none;
+}
+
+/* line 15, ../sass/_resett.scss */
+input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 16, ../sass/_resett.scss */
+img, fieldset {
+  border: 0;
+}
+
+/* line 17, ../sass/_resett.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, ../sass/_resett.scss */
+a:link, a:visited {
+  font: 1.0625em 'OpenSans Light', Arial, sans-serif;
+  color: #000;
+  text-decoration: none;
+}
+
+/*17px*/
+/* line 19, ../sass/_resett.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+/* line 23, ../sass/_resett.scss */
+.float-r {
+  float: right !important;
+}
+
+/* line 24, ../sass/_resett.scss */
+.float-l {
+  float: left !important;
+}
+
+/* line 25, ../sass/_resett.scss */
+.no-float {
+  float: none !important;
+}
+
+/* line 26, ../sass/_resett.scss */
+.no-border {
+  border: 0 !important;
+}
+
+/* line 27, ../sass/_resett.scss */
+.no-bg {
+  background: none !important;
+}
+
+/* line 28, ../sass/_resett.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 29, ../sass/_resett.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* line 30, ../sass/_resett.scss */
+.no-display {
+  display: none !important;
+}
+
+/* line 31, ../sass/_resett.scss */
+.display {
+  display: block !important;
+}
+
+/* line 32, ../sass/_resett.scss */
+.inline {
+  display: inline !important;
+}
+
+/* line 33, ../sass/_resett.scss */
+.overflow {
+  overflow: hidden !important;
+}
+
+/* line 34, ../sass/_resett.scss */
+.align-r {
+  text-align: right !important;
+}
+
+/* line 35, ../sass/_resett.scss */
+.align-l {
+  text-align: left !important;
+}
+
+/* line 36, ../sass/_resett.scss */
+.align-c {
+  text-align: center !important;
+}
+
+/* line 37, ../sass/_resett.scss */
+.clear {
+  clear: both;
+}
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 51, ../sass/_grids.scss */
+.main {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.5), rgba(179, 179, 255, 0.5) 77.99704%, transparent 77.99704%);
+  background-size: 8.48899%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+  /*--------fheader---------*/
+  /*--------content---------*/
+  /*--------aside---------*/
+  /*--------footer---------*/
+}
+/* line 12, ../../../susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.main:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 54, ../sass/_grids.scss */
+.main .for-header {
+  background: url(../images/blog_header.png) no-repeat;
+  height: 364px;
+}
+/* line 58, ../sass/_grids.scss */
+.main .for-header header ul.main-menu {
+  width: 40.5771%;
+  float: left;
+  margin-right: 1.86783%;
+  margin-left: 38.20044%;
+  margin-top: 2%;
+}
+/* line 62, ../sass/_grids.scss */
+.main .for-header header ul.main-menu li {
+  display: inline;
+  margin-right: 2.6%;
+}
+/* line 65, ../sass/_grids.scss */
+.main .for-header header ul.main-menu li a {
+  color: #8f8f8f;
+}
+/* line 70, ../sass/_grids.scss */
+.main .for-header header ul.main-menu li.active a {
+  color: #fff;
+}
+/* line 79, ../sass/_grids.scss */
+.main .content {
+  width: 66.04406%;
+  float: left;
+  margin-right: 1.86783%;
+  margin-left: 8.48899%;
+  margin-top: 5.7264%;
+}
+/* line 83, ../sass/_grids.scss */
+.main .content article {
+  margin-bottom: 20px;
+}
+/* line 85, ../sass/_grids.scss */
+.main .content article h3 {
+  margin-bottom: 20px;
+}
+/* line 88, ../sass/_grids.scss */
+.main .content article span {
+  color: #7F7F7F;
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+/* line 94, ../sass/_grids.scss */
+.main .content article p {
+  width: 87.14648%;
+  float: left;
+  margin-right: 2.82816%;
+  margin-bottom: 80px;
+}
+/* line 99, ../sass/_grids.scss */
+.main .content article img {
+  width: 87.14648%;
+  float: left;
+  margin-right: 2.82816%;
+  clear: both;
+}
+/* line 105, ../sass/_grids.scss */
+.main .content .left {
+  width: 10.02536%;
+  float: left;
+  margin-right: 2.82816%;
+}
+/* line 108, ../sass/_grids.scss */
+.main .content .right {
+  width: 10.02536%;
+  float: right;
+  margin-right: 0;
+}
+/* line 115, ../sass/_grids.scss */
+.main aside {
+  width: 23.59913%;
+  float: right;
+  margin-right: 0;
+}
+/* line 123, ../sass/_grids.scss */
+.main footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 125, ../sass/_grids.scss */
+.main footer .sotial-footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background: #00A0F5;
+  height: 115px;
+}
+/* line 130, ../sass/_grids.scss */
+.main footer .sotial-footer ul {
+  width: 49.06609%;
+  float: left;
+  margin-right: 1.86783%;
+  margin-left: 42.44493%;
+  margin-top: 38px;
+}
+/* line 134, ../sass/_grids.scss */
+.main footer .sotial-footer ul li {
+  width: 10.86565%;
+  float: left;
+  margin-right: 1.86783%;
+  display: inline;
+  margin-right: 0.5%;
+}
+/* line 138, ../sass/_grids.scss */
+.main footer .sotial-footer ul li a {
+  color: #fff;
+}
+/* line 140, ../sass/_grids.scss */
+.main footer .sotial-footer ul li a i {
+  border: 2px solid #fff;
+  padding: 7px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 150%;
+}
+/* line 150, ../sass/_grids.scss */
+.main footer .autor-footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background: #008CD5;
+}
+/* line 154, ../sass/_grids.scss */
+.main footer .autor-footer span {
+  width: 23.59913%;
+  float: left;
+  margin-right: 1.86783%;
+  margin-left: 8.48899%;
+  margin-top: 2%;
+  color: #e0e0e0;
+}
+/* line 161, ../sass/_grids.scss */
+.main footer .autor-footer ul.main-menu {
+  margin-top: 2%;
+  width: 40.5771%;
+  float: right;
+  margin-right: 0;
+  margin-bottom: 33px;
+}
+/* line 166, ../sass/_grids.scss */
+.main footer .autor-footer ul.main-menu li {
+  display: inline;
+  margin-right: 2.6%;
+}
+/* line 169, ../sass/_grids.scss */
+.main footer .autor-footer ul.main-menu li a {
+  color: #e0e0e0;
+}

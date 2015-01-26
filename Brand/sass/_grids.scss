@@ -1,0 +1,176 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "susy";
+@import "http://fonts.googleapis.com/css?family=Open+Sans";
+@import "http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
+@import "compass/utilities/general/clearfix";
+
+
+
+// Susy Grid Config
+// For more information: http://susydocs.oddbird.net/en/latest/settings/
+
+$susy: (
+    columns: 12,
+    gutters: 0.2821, //30px
+    container: 1170px,
+    math: fluid,
+    output: float,
+    gutter-position: after, //inside,  (before | after | split | inside | inside-static )
+    global-box-sizing: border-box,
+    debug: (
+        image: show, // варианты: show | hide | show-columns | show-baseline
+        color: rgba(#66f, .5),
+        output: background,
+        toggle: top right,
+    )
+
+);
+
+@include border-box-sizing;
+$logo_len: 140px;
+
+@mixin title_position(){
+    text-align: center;
+    margin-bottom: 5.08%;/*65px*/
+    font-weight: bold;
+    font-size: 2.25em;
+    line-height: 70%; 
+} 
+@mixin browz-border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+
+}
+
+.main{
+    @include container;
+    /*--------fheader---------*/
+    .for-header{
+        background: url(../images/blog_header.png) no-repeat;
+        height: 364px;
+        header{
+            ul.main-menu{
+                @include span(5 of 12);
+                @include push(4.5);
+                margin-top: 2%;
+                li{
+                    display: inline;
+                    margin-right: 2.6%;//30px;
+                    a{
+                      color: #8f8f8f;
+                    }
+                }
+                li.active{
+                    a{
+                      color: #fff;
+                    }
+                }        
+
+            }
+        }
+    }
+/*--------content---------*/
+    .content{
+        @include span(8 of 12);
+        @include push(1);
+        margin-top: 5.7264%;
+        article{
+            margin-bottom: 20px;
+            h3{
+                margin-bottom: 20px;
+            }
+            span{
+                color: #7F7F7F;
+                font-size: 0.8em;
+                margin-bottom: 15px;
+            }
+
+            p{
+                @include span(7 of 8);
+                margin-bottom: 80px;
+            }
+
+            img{
+                @include span(7 of 8);
+                clear: both;
+            }
+        }
+
+        .left{
+            @include span(1 of 8);
+        }
+        .right{
+            @include span(1 of 8 last);
+        }
+    }
+
+
+/*--------aside---------*/
+    aside{
+        @include span(3 of 12 last);
+        //@include push(0.5);
+    }
+
+
+
+/*--------footer---------*/
+    footer{
+        @include span(full);
+        .sotial-footer{
+            @include span(full);
+            background: #00A0F5;
+            height: 115px;
+            
+            ul{
+                @include span(6 of 12);
+                @include push(5);
+                margin-top: 38px;
+                li{
+                    @include span(1.5 of 12);
+                    display: inline;
+                    margin-right: 0.5%;
+                    a{ 
+                        color: #fff;
+                        i{
+                          border: 2px solid #fff;
+                          padding: 7px;
+                          @include browz-border-radius(50%);
+                          font-size: 150%;
+                        }
+                    }
+                }
+            }
+        }
+        .autor-footer{
+            @include span(full);
+            background: #008CD5;
+
+            span{
+                @include span(3 of 12);
+                @include push(1);
+                margin-top: 2%;
+                color: #e0e0e0;
+            }
+            
+            ul.main-menu{
+                margin-top: 2%;
+                @include span(5 of 12 last);
+                margin-bottom: 33px;
+                
+                li{
+                    display: inline;
+                    margin-right: 2.6%;//30px;
+                    a{
+                      color: #e0e0e0;
+                    }
+                }
+            }
+        }
+    }
+}
